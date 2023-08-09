@@ -304,6 +304,8 @@ h2 {
 
   .partner-section {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     background-color: #3e3e3e;
     padding: 2rem;
