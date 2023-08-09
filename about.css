@@ -1,0 +1,342 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  font-family: 'Lato', sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+main p {
+  font-size: 0.8rem;
+  color: #515151;
+  padding: 0.4rem 0%;
+}
+
+.small-navbar {
+  display: flex;
+  justify-content: end;
+  gap: 1.4rem;
+  padding: 0% 5rem;
+  background-color: #3e3e3e;
+}
+
+.small-navbar img {
+  max-width: 0.5rem;
+  margin: 0%;
+}
+
+.small-navbar p {
+  font-size: 0.8rem;
+  margin: 0%;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0% 0.8rem;
+  box-shadow: 1px 5px 3px #3e3e3e;
+  z-index: 3;
+}
+
+.nav-menu {
+  display: none;
+  list-style-type: none;
+  gap: 3rem;
+  padding: 0%;
+}
+
+.nav-menu a {
+  color: #838080;
+  font-weight: 400;
+}
+
+#about {
+  color: #f24822;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  gap: 5px;
+  left: 0%;
+  cursor: pointer;
+}
+
+.activehamburger {
+  position: fixed;
+  z-index: 3;
+}
+
+span {
+  display: block;
+  width: 33px;
+  height: 2px;
+  background-color: #f24822;
+  border-radius: 3px;
+  transform-origin: 0% 100%;
+  transition: all 300ms;
+}
+
+.hamburger span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  background: #515151;
+  border-radius: 3px;
+  transform-origin: 0% 100%;
+  transition: all 300ms;
+}
+
+.bar1 {
+  display: flex;
+}
+
+.activebar1 {
+  transform: rotate(45deg) translate(-2px, 2px);
+}
+
+.activebar2 {
+  opacity: 0;
+  margin-left: -30px;
+}
+
+.activebar3 {
+  transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+/* <a href="https://www.freepik.com/free-photo/dark-concrete-texture-background_9053906.htm#query=texture%20background&position=10&from_view=keyword&track=ais">Image by kbza</a> on Freepik */
+.presentation {
+  background-image: url(images/23.jpg);
+  padding: 3rem 1rem;
+}
+
+.presentation .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  color: #f24822;
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 1rem 0%;
+}
+
+.tagline {
+  color: #f24822;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0%;
+}
+
+.description {
+  color: #141313;
+  background-color: #fff;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+.details-presentation { padding: 2rem 0%; }
+
+.email {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.info {
+  color: #838080;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4rem;
+  padding: 1rem;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.logo-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.partners img {
+  width: 20%;
+}
+
+.flex-container div {
+  width: 40%;
+}
+
+.flex-container div img {
+  width: 100%;
+}
+
+.event p { color: #fff; }
+
+.logo-section .container img {
+  width: 70%;
+}
+
+.past-events-sections .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.events {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bkg-event-picture {
+  width: 90%;
+  background-image: url(images/pexels-on-restaurant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.event {
+  color: #fff;
+  background-color: #e7350d7a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 5rem;
+}
+
+.partner-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e3e3e;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.partner-section h2 {
+  color: #838080;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer {
+  width: 100%;
+}
+
+.footer-text {
+  padding: 0%;
+  width: 50%;
+  margin: 0%;
+}
+
+.footer-text p {
+  font-size: 0.8rem;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+    margin: auto;
+    padding: 0%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  h2 {
+    padding: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  li a { text-decoration: none; }
+
+  .logo-section .container img {
+    width: 50%;
+  }
+
+  .events {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .bkg-event-picture { width: 45%; }
+
+  footer {
+    padding: 2rem;
+    color: #fff;
+    font-size: 0.8rem;
+    background-color: #2e2e2e;
+  }
+
+  .desktop {
+    display: flex;
+  }
+
+  .mobile {
+    display: none;
+  }
+}

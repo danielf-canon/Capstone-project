@@ -55,3 +55,19 @@ for (let i = 0; i < productsArray.length; i += 1) {
   productCard.appendChild(cardText);
   dishesWrapper.appendChild(productCard);
 }
+
+const line1 = document.querySelector('.bar1');
+const line2 = document.querySelector('.bar2');
+const line3 = document.querySelector('.bar3');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+function openHbg() {
+  line1.classList.toggle('activebar1');
+  line2.classList.toggle('activebar2');
+  line3.classList.toggle('activebar3');
+
+  navMenu.classList.add('activeNavList');
+}
+
+hamburger.addEventListener('click', openHbg);

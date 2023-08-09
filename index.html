@@ -15,28 +15,27 @@
 
 <body>
   <header>
-    <div class="small-navbar">
-      <a href=""><img src="images/facebook.png" alt=""></a>
-      <a href=""><img src="images/twitter.png" alt=""></a>
+    <div class="small-navbar desktop">
+      <a href="#"><img src="images/facebook.png" alt=""></a>
+      <a href="#"><img src="images/twitter.png" alt=""></a>
       <p>English</p>
       <p>My page</p>
       <p>Logout</p>
     </div>
     <nav>
-      <div class="mobile">
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <img src="images/NewLogoCut.jpeg" alt="logo" class="navLogo">
+      <div class="hamburger">
+        <span class='bar1'></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
       </div>
-      <img src="images/NewLogoCut.jpeg" alt="logoDesktop" class="navLogo desktop">
-      <ul class="navList desktop">
-        <li><a href="" class="nav-link">About</a></li>
+      <ul class="nav-menu">
+        <li><a href="about.html" class="nav-link" id="about">About</a></li>
         <li><a href="#" class="nav-link">News</a></li>
         <li><a href="#" class="nav-link">Menu</a></li>
       </ul>
+      <a href="index.html">
+        <img src="images/NewLogoCut.jpeg" alt="logoDesktop" class="navLogo">
+      </a>
     </nav>
   </header>
 
@@ -46,12 +45,17 @@
         <h1>Swing & Notes<br>Restaurante de Jazz en Vivo</h1>
         <p class="tagline">"Explora el Sabor del Jazz en Vivo"</p>
         <p class="description">Step into a world where delectable cuisine and soul-stirring melodies unite at JazzHarmony Eatery. Nestled in the heart of Bogotá, our restaurant offers a captivating fusion of flavors and sounds that will transport you to a realm of pure delight.</p>
+        <div class="details-presentation">
+          <p class="schedule">2015.10.15(THU) ~ 16(FRI)</p>
+          <p class="location">@ National Museum of Karea, Art Center Nabi and more</p>
+        </div>
       </div>
     </section>
 
     <section class="events">
       <div class="container">
         <h2 class="section-title" id="events-section-title">Upcoming events</h2>
+        <span></span>
         <div class="events-wrapper">
           <article class="event-card">
             <img src="images/pexels-brett-sayles-3532438.jpg" alt="">
@@ -83,6 +87,7 @@
     <section class="products">
       <div class="container">
         <h2 class="section-title">Featured Dishes</h2>
+        <span></span>
         <div class="dishes-wrapper">
           <!--
           <article class="card-product">
