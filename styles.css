@@ -74,14 +74,18 @@ main p {
 
 nav {
   display: flex;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
   padding: 0% 0.8rem;
   box-shadow: 1px 5px 3px #3e3e3e;
+  background-color: #fff;
   z-index: 3;
   animation-name: slidein;
   animation-duration: 1.5s;
 }
+
+.activeNav { position: fixed; }
 
 .nav-menu {
   display: none;
@@ -91,8 +95,33 @@ nav {
 }
 
 .nav-menu a {
+  text-decoration: none;
   color: #838080;
   font-weight: 400;
+}
+
+.activeNavMenu a {
+  text-decoration: none;
+  color: #f24822;
+  font-weight: 400;
+}
+
+.activeNavMenu {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: #515151;
+  font-size: 2rem;
+  height: 90vh;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  list-style-type: none;
 }
 
 #about {
@@ -252,6 +281,7 @@ h2 {
 
 .button {
   background-color: #f1370d;
+  font-weight: 500;
   transition: 0.3s ease;
   color: #fff;
   border: none;
@@ -303,8 +333,21 @@ h2 {
   height: 75%;
 }
 
+.product-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
 .product-description h3 {
   margin: 0%;
+}
+
+#moreBtn {
+  color: black;
+  background-color: #fff;
+  border: #3e3e3e 1px solid;
 }
 
 .desktop {
