@@ -9,6 +9,44 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.fadeInAnimation {
+  opacity: 1;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+}
+
+.delay3 {
+  animation-duration: 3s;
+}
+
+.delay5 {
+  animation-duration: 5s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  /* stylelint-disable-next-line rule-empty-line-before */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 main p {
   font-size: 0.8rem;
   color: #515151;
@@ -41,6 +79,8 @@ nav {
   padding: 0% 0.8rem;
   box-shadow: 1px 5px 3px #3e3e3e;
   z-index: 3;
+  animation-name: slidein;
+  animation-duration: 1.5s;
 }
 
 .nav-menu {
@@ -194,6 +234,11 @@ h2 {
   background-color: #beb7b717;
   gap: 0.4rem;
   padding: 0.5rem;
+  transition: all 0.6s;
+}
+
+.event-card:hover {
+  transform: scale(1.1);
 }
 
 .event-card img {
@@ -206,10 +251,18 @@ h2 {
 }
 
 .button {
-  background-color: #f24822;
+  background-color: #f1370d;
+  transition: 0.3s ease;
   color: #fff;
   border: none;
-  padding: 3%;
+  padding: 5%;
+  border-radius: 3px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 2px 3px #50505044;
+  background-color: #c92703;
 }
 
 .dishes-wrapper {
@@ -238,6 +291,11 @@ h2 {
   background-repeat: no-repeat;
   background-size: 20% 40%;
   background-position: 0% 0%;
+  transition-duration: 0.6s;
+}
+
+.card-product:hover {
+  transform: translateX(12px);
 }
 
 .card-product img {

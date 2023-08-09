@@ -9,6 +9,44 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.fadeInAnimation {
+  opacity: 1;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+}
+
+.delay3 {
+  animation-duration: 3s;
+}
+
+.delay5 {
+  animation-duration: 5s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  /* stylelint-disable-next-line rule-empty-line-before */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 main {
   text-align: center;
 }
@@ -45,6 +83,8 @@ nav {
   padding: 0% 0.8rem;
   box-shadow: 1px 5px 3px #3e3e3e;
   z-index: 3;
+  animation-name: slidein;
+  animation-duration: 1.5s;
 }
 
 .nav-menu {
@@ -224,6 +264,8 @@ h1 {
 
 .bkg-event-picture {
   width: 90%;
+  transition: scale 0.4s ease-in-out;
+  transition: all 1s ease-in;
   background-image: url(images/pexels-on-restaurant.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -237,6 +279,10 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 3rem 5rem;
+}
+
+.bkg-event-picture:hover {
+  transform: scale(1.2) rotate(360deg);
 }
 
 .partner-section {
