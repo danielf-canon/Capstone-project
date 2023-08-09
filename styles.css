@@ -68,9 +68,9 @@ nav {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  cursor: pointer;
   gap: 5px;
   left: 0%;
-  cursor: pointer;
 }
 
 .activehamburger {
@@ -188,20 +188,28 @@ h2 {
 }
 
 .event-card {
-  text-align: center;
   display: flex;
+  text-align: center;
+  align-items: center;
   background-color: #beb7b717;
   gap: 0.4rem;
   padding: 0.5rem;
 }
 
 .event-card img {
-  width: 35%;
+  width: 40%;
 }
 
 .event-description {
   color: #fff;
   margin: 0%;
+}
+
+.button {
+  background-color: #f24822;
+  color: #fff;
+  border: none;
+  padding: 3%;
 }
 
 .dishes-wrapper {
@@ -233,7 +241,7 @@ h2 {
 }
 
 .card-product img {
-  width: 45%;
+  width: 50%;
   height: 75%;
 }
 
@@ -275,21 +283,27 @@ h2 {
 
   .events-wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 23.5%);
   }
 
   .event-card {
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1.4rem;
   }
 
   .event-card img {
     width: 100%;
   }
 
+  .products { padding: 2rem; }
+
   .dishes-wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: center;
+    padding: 1rem;
   }
 
   .card-product {
@@ -340,4 +354,11 @@ h2 {
   .flex-container div img {
     width: 100%;
   }
+
+  .events-link {
+    padding-top: 3%;
+    color: #fff;
+  }
+
+  .mobile { display: none; }
 }
