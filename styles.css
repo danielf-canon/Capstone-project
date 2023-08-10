@@ -29,7 +29,7 @@ body {
   0% {
     opacity: 0;
   }
-  /* stylelint-disable-next-line rule-empty-line-before */
+
   100% {
     opacity: 1;
   }
@@ -56,6 +56,7 @@ main p {
 .small-navbar {
   display: flex;
   justify-content: end;
+  width: 100%;
   gap: 1.4rem;
   padding: 0% 5rem;
   background-color: #3e3e3e;
@@ -74,6 +75,11 @@ main p {
 
 nav {
   display: flex;
+  flex-direction: column;
+}
+
+.main-nav {
+  display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: center;
@@ -83,6 +89,7 @@ nav {
   z-index: 3;
   animation-name: slidein;
   animation-duration: 1.5s;
+  margin-bottom: 0.5rem;
 }
 
 .activeNav { position: fixed; }
@@ -184,8 +191,8 @@ span {
   transform: rotate(-45deg) translate(-4px, 4px);
 }
 
-/* <a href="https://www.freepik.com/free-photo/dark-concrete-texture-background_9053906.htm#query=texture%20background&position=10&from_view=keyword&track=ais">Image by kbza</a> on Freepik */
 .presentation {
+  background-image: url(images/23.jpg);
   padding: 3rem 1rem;
 }
 
@@ -204,11 +211,15 @@ h1 {
 }
 
 .description {
-  font-size: 1.3rem;
+  margin: 1rem 0%;
+  padding: 1rem;
+  border: #fff 5px solid;
+  font-size: 1.2rem;
   font-weight: 400;
+  line-height: 1.5rem;
 }
 
-.details-presentation { padding: 2rem 0%; }
+.details-presentation { padding: 1rem 0%; }
 
 .schedule {
   font-size: 2rem;
@@ -227,7 +238,8 @@ h1 {
 }
 
 h2 {
-  padding: 1rem;
+  padding: 0%;
+  padding-top: 1rem;
 }
 
 .events {
@@ -309,7 +321,7 @@ h2 {
   gap: 0.5rem;
 }
 
-.products .container h2 { padding: 0.4rem; }
+.products .container h2 { padding: 0%; }
 
 .card-product {
   display: flex;
@@ -356,31 +368,21 @@ h2 {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 750px;
+    max-width: 950px;
     margin: auto;
     padding: 0%;
   }
 
-  .hamburger {
-    display: none;
-  }
-
-  nav {
+  .main-nav {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
   }
 
-  .nav-menu {
-    display: flex;
-  }
+  .nav-menu { display: flex; }
 
   li a { text-decoration: none; }
-
-  .desktop {
-    display: flex;
-  }
 
   .events-wrapper {
     display: grid;
@@ -394,9 +396,7 @@ h2 {
     line-height: 1.4rem;
   }
 
-  .event-card img {
-    width: 100%;
-  }
+  .event-card img { width: 100%; }
 
   .products { padding: 2rem; }
 
@@ -460,6 +460,8 @@ h2 {
     padding-top: 3%;
     color: #fff;
   }
+
+  .desktop { display: flex; }
 
   .mobile { display: none; }
 }

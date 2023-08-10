@@ -29,7 +29,7 @@ body {
   0% {
     opacity: 0;
   }
-  /* stylelint-disable-next-line rule-empty-line-before */
+
   100% {
     opacity: 1;
   }
@@ -77,6 +77,11 @@ main p {
 }
 
 nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav {
   display: flex;
   width: 100%;
   background-color: #fff;
@@ -188,10 +193,9 @@ span {
   transform: rotate(-45deg) translate(-4px, 4px);
 }
 
-/* <a href="https://www.freepik.com/free-photo/dark-concrete-texture-background_9053906.htm#query=texture%20background&position=10&from_view=keyword&track=ais">Image by kbza</a> on Freepik */
 .presentation {
   background-image: url(images/23.jpg);
-  padding: 3rem 1rem;
+  padding: 3rem 0%;
 }
 
 .presentation .container {
@@ -363,7 +367,7 @@ footer {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 750px;
+    max-width: 900px;
     margin: auto;
     padding: 0%;
   }
@@ -373,10 +377,10 @@ footer {
   }
 
   h2 {
-    padding: 1rem;
+    padding-top: 1rem;
   }
 
-  nav {
+  .main-nav {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;

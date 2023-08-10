@@ -75,10 +75,10 @@ For more information on the importance of a professional README for your reposit
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">HTML</a></li>
-    <li><a href="https://reactjs.org/">CSS</a></li>
-    <li><a href="https://reactjs.org/">JavaScript</a></li>
-    <li><a href="https://reactjs.org/">Nodejs</a></li>
+    <li><a href="https://www.w3.org/">HTML</a></li>
+    <li><a href="https://www.css3.com/">CSS</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
+    <li><a href="https://nodejs.org/es">Nodejs</a></li>
   </ul>
 </details>
 
@@ -191,7 +191,9 @@ If you like this project remember to share it.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank every persone that encourge me to start this journey
+I would like to thank every persone that encourge me to start this journey.
+
+Original design idea by `[Cindy Shin in Behance.](https://www.behance.net/adagio07) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

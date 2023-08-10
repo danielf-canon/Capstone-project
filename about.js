@@ -3,7 +3,7 @@ const line2 = document.querySelector('.bar2');
 const line3 = document.querySelector('.bar3');
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-const navBar = document.querySelector('nav');
+const navBar = document.querySelector('.main-nav');
 
 function openHbg() {
   line1.classList.toggle('activebar1');
