@@ -1,0 +1,191 @@
+body {
+  text-align: center;
+}
+
+.presentation .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.email {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.info {
+  color: #838080;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4rem;
+  padding: 1rem;
+}
+
+.logo-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.partners img {
+  width: 20%;
+}
+
+.flex-container div {
+  width: 40%;
+}
+
+.flex-container div img {
+  width: 100%;
+}
+
+.event p { color: #fff; }
+
+.logo-section .container img {
+  width: 70%;
+}
+
+.past-events-sections .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.past-events {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bkg-event-picture {
+  width: 90%;
+  transition: scale 0.4s ease-in-out;
+  transition: all 1s ease-in;
+  background-image: url(images/pexels-on-restaurant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.event {
+  color: #fff;
+  background-color: #e7350d7a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 5rem;
+}
+
+.bkg-event-picture:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.partner-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e3e3e;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.partner-section h2 {
+  color: #838080;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer {
+  width: 100%;
+}
+
+.footer-text {
+  padding: 0%;
+  width: 50%;
+  margin: 0%;
+}
+
+.footer-text p {
+  font-size: 0.8rem;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 0%;
+  }
+
+  h2 {
+    padding-top: 1rem;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  li a { text-decoration: none; }
+
+  .logo-section .container img {
+    width: 50%;
+  }
+
+  .past-events {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .bkg-event-picture { width: 45%; }
+
+  footer {
+    padding: 2rem;
+    color: #fff;
+    font-size: 0.8rem;
+    background-color: #2e2e2e;
+  }
+
+  .desktop {
+    display: flex;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
